@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Card</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script  src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js">
+</head>
+<!--this program will display a birthday card and on clicking on the "click to open" button will reveal the second
+     page of the card-->
+<body>
+   <div id="outside">
+       <p id="outside_title">Happy Birthday</p>
+       <p>
+           <button onclick="open_card()">Click to open</button>
+       </p>
+       <img id="outside_pic" src="cake.png" alt="Happy Birthday picture">
+   </div>
+   <div id="inside">
+       <p id="inside_title">Happy Birthday to you</p>
+       <p id="message">May you have the very best day <br>and a great year ahead!</p>
+       <img id="inside_pic" src="salmonbc.jpg" alt="Birthday Cake">
+       
+       <p>
+           <button  onclick="close_card()">Click to close</button>
+       </p>
+   </div>
+    
+</body>
+</html>
